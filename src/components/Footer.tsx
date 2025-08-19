@@ -39,7 +39,7 @@ const Footer = () => {
                 <div className="text-sm opacity-75">ONS BENISON</div>
               </div>
             </div>
-            <p className="text-sm opacity-90 leading-relaxed text-justify">
+            <p className="text-sm opacity-90 leading-relaxed">
               India's first Centralized Water Purification & Distribution System. 
               Committed to providing clean, safe water while protecting our environment.
             </p>
