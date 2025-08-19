@@ -32,7 +32,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo Section */}
           <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2">
+            <a href="#home" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <img 
                 src="/mrom_logo.svg" 
                 alt="M-Rom Logo" 
@@ -42,7 +42,7 @@ const Header = () => {
                 <span className="text-xl font-bold text-primary">M-Rom</span>
                 <span className="text-xs text-muted-foreground">ONS BENISON</span>
               </div> */}
-            </div>
+            </a>
           </div>
 
           {/* Desktop Navigation */}

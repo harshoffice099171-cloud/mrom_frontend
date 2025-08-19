@@ -191,7 +191,7 @@ const Contact = () => {
                   </Button>
                 </a>
                 <Link to="/schedule-installation">
-                  <Button variant="secondary" size="lg" className="bg-white text-primary border-white hover:bg-primary-foreground hover:text-primary">
+                  <Button variant="secondary" size="lg" className="bg-white text-primary border-white hover:bg-primary-foreground hover:text-primary hover:opacity-80 transition-opacity">
                     Schedule Installation
                   </Button>
                 </Link>
