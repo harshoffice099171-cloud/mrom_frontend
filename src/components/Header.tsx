@@ -63,7 +63,7 @@ const Header = () => {
             {!user ? (
               <>
                 <Link to="/auth?mode=login">
-                  <Button variant="ghost">Sign In</Button>
+                  <Button variant="ghost">Login</Button>
                 </Link>
                 <Link to="/auth?mode=register">
                   <Button>Get Started</Button>
@@ -116,7 +116,7 @@ const Header = () => {
                       className="w-full justify-center py-3 text-base font-medium hover:bg-muted transition-colors"
                     >
                       <User className="h-4 w-4 mr-2" />
-                      Sign In
+                      Login
                     </Button>
                   </Link>
                   <Link 

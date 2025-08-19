@@ -57,7 +57,7 @@ const Auth = () => {
       toast({
         variant: 'destructive',
         title: 'Login Failed',
-        description: error.message || 'Failed to sign in. Please try again.',
+        description: error.message || 'Failed to login. Please try again.',
       });
     } else {
       toast({

@@ -6,25 +6,18 @@ import blueBuildingsBg from "@/assets/blue-buildings-bg.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative pt-16 lg:pt-20 pb-12 lg:pb-16 min-h-[100vh] sm:min-h-screen bg-gradient-fresh overflow-hidden">
+    <section id="home" className="relative pt-16 lg:pt-24 pb-8 lg:pb-20 min-h-[100vh] sm:min-h-screen bg-gradient-fresh">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 dark:opacity-10"
         style={{ backgroundImage: `url(${blueBuildingsBg})` }}
       />
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-4rem)] sm:min-h-[80vh]">
+        <div className="grid lg:grid-cols-2 gap-4 lg:gap-12 items-center min-h-[calc(100vh-4rem)] lg:min-h-[calc(100vh-6rem)]">
           {/* Left Content */}
-          <div className="space-y-8 animate-float">
+          <div className="space-y-8 animate-float py-3">
             <div className="space-y-4">
-              <div className="flex items-center space-x-2">
-                <img 
-                  src="/mrom_logo.svg" 
-                  alt="M-Rom Logo" 
-                  className="h-10 w-30"
-                />
-            {/*     <span className="text-2xl font-bold text-primary">M-Rom</span> */}
-              </div>
+
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-foreground leading-tight">
                 <span className="bg-gradient-ocean bg-clip-text text-transparent">
                   Aap Ke Pani Ka
@@ -77,7 +70,7 @@ const Hero = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative mt-8 lg:mt-0">
+          <div className="relative mt-4 lg:mt-0 animate-float py-3">
             <div className="relative rounded-2xl overflow-hidden shadow-glow mx-2 sm:mx-0">
               <img
                 src={heroImage}
