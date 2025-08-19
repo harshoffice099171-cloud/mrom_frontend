@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* M-Rom Water Service Design System - Clean, Sustainable, Trustworthy */
+
+@layer base {
+  :root {
+    /* Clean Water Theme - Blues and Aqua */
+    --background: 210 50% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Primary - Deep Ocean Blue for trust and reliability */
+    --primary: 210 85% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 210 85% 45%;
+
+    /* Secondary - Fresh Water Blue */
+    --secondary: 195 100% 92%;
+    --secondary-foreground: 215 25% 15%;
+
+    /* Muted - Soft Cloud */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent - Environmental Green */
+    --accent: 150 60% 45%;
+    --accent-foreground: 0 0% 98%;
+    --accent-glow: 150 60% 65%;
+
+    /* Success - Pure Green for environmental messaging */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 210 85% 25%;
+
+    /* Water-themed gradients */
+    --gradient-water: linear-gradient(135deg, hsl(195 100% 85%), hsl(210 85% 45%));
+    --gradient-ocean: linear-gradient(135deg, hsl(210 85% 25%), hsl(195 100% 35%));
+    --gradient-fresh: linear-gradient(135deg, hsl(195 100% 92%), hsl(210 50% 98%));
+    --gradient-eco: linear-gradient(135deg, hsl(150 60% 45%), hsl(195 100% 45%));
+    
+    /* Shadows with water theme */
+    --shadow-water: 0 10px 30px -10px hsl(210 85% 25% / 0.2);
+    --shadow-glow: 0 0 40px hsl(195 100% 85% / 0.6);
+    --shadow-eco: 0 8px 25px -8px hsl(150 60% 45% / 0.3);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
