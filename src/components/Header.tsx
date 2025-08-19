@@ -88,50 +88,63 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="lg:hidden py-4">
-            <nav className="flex flex-col space-y-4">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-foreground hover:text-primary transition-colors px-4"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
-              ))}
-              {!user ? (
-                <>
-                  <Link 
-                    to="/auth?mode=login" 
-                    className="px-4"
+            <nav className="flex flex-col">
+              {/* Navigation Links */}
+              <div className="space-y-4 mb-6">
+                {navItems.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-foreground hover:text-primary transition-colors px-4 py-2 block text-lg font-medium"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    <Button variant="ghost" className="w-full justify-start">
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+              
+              {/* Auth Section */}
+              {!user ? (
+                <div className="px-4 pt-4 border-t border-border">
+                  <Link 
+                    to="/auth?mode=login" 
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block mb-4"
+                  >
+                    <Button 
+                      variant="outline" 
+                      className="w-full justify-center py-3 text-base font-medium hover:bg-muted transition-colors"
+                    >
+                      <User className="h-4 w-4 mr-2" />
                       Sign In
                     </Button>
                   </Link>
                   <Link 
                     to="/auth?mode=register" 
-                    className="px-4"
                     onClick={() => setIsMenuOpen(false)}
+                    className="block"
                   >
-                    <Button className="w-full justify-start">
+                    <Button 
+                      className="w-full justify-center py-3 text-base font-medium bg-primary hover:bg-primary/90 transition-colors shadow-md"
+                    >
                       Get Started
                     </Button>
                   </Link>
-                </>
+                </div>
               ) : (
-                <Button 
-                  variant="ghost" 
-                  onClick={() => {
-                    handleSignOut();
-                    setIsMenuOpen(false);
-                  }}
-                  className="w-full justify-start px-4"
-                >
-                  <LogOut className="h-4 w-4 mr-2" />
-                  Sign Out
-                </Button>
+                <div className="px-4 pt-4 border-t border-border">
+                  <Button 
+                    variant="outline" 
+                    onClick={() => {
+                      handleSignOut();
+                      setIsMenuOpen(false);
+                    }}
+                    className="w-full justify-center py-3 text-base font-medium hover:bg-destructive hover:text-destructive-foreground transition-colors"
+                  >
+                    <LogOut className="h-4 w-4 mr-2" />
+                    Sign Out
+                  </Button>
+                </div>
               )}
             </nav>
           </div>

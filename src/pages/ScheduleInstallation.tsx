@@ -18,11 +18,20 @@ const ScheduleInstallation = () => {
       
       <div className="w-full max-w-3xl mx-auto relative z-10">
         <Card className="bg-background/95 backdrop-blur-sm shadow-glow border-primary/20">
-          <CardHeader className="text-center space-y-2">
-            <CardTitle className="text-2xl font-bold">Schedule Your Installation</CardTitle>
-            <p className="text-muted-foreground">
-              Fill out the form below and our team will contact you to schedule your installation
-            </p>
+          <CardHeader className="text-center space-y-4">
+            <div className="flex items-center justify-center space-x-2">
+              <img 
+                src="/mrom_logo.svg" 
+                alt="M-Rom Logo" 
+                className="h-10 w-30"
+              />
+            </div>
+            <div>
+              <CardTitle className="text-2xl font-bold">Schedule Your Installation</CardTitle>
+              <p className="text-muted-foreground">
+                Fill out the form below and our team will contact you to schedule your installation
+              </p>
+            </div>
             <Link 
               to="/" 
               className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors"

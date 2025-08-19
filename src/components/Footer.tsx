@@ -11,10 +11,7 @@ const Footer = () => {
 
   const policies = [
     { name: "Privacy Policy", href: "#" },
-    { name: "Return Policy", href: "#" },
-    { name: "Refund Policy", href: "#" },
-    { name: "Warranty Policy", href: "#" },
-    { name: "Terms of Service", href: "#" }
+    { name: "Return and Warranty Policy", href: "#" }
   ];
 
   return (

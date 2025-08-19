@@ -163,7 +163,7 @@ const Auth = () => {
                 <div className="space-y-2">
                   <Label htmlFor="emailOrPhone">Email or Phone Number</Label>
                   <div className="relative">
-                    <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
                       id="emailOrPhone"
                       type="text"
@@ -179,7 +179,7 @@ const Auth = () => {
                 <div className="space-y-2">
                   <Label htmlFor="login-password">Password</Label>
                   <div className="relative">
-                    <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
                       id="login-password"
                       type="password"
@@ -209,7 +209,7 @@ const Auth = () => {
                 <div className="space-y-2">
                   <Label htmlFor="name">Full Name</Label>
                   <div className="relative">
-                    <User className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
                       id="name"
                       placeholder="Enter your full name"
@@ -225,7 +225,7 @@ const Auth = () => {
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
                   <div className="relative">
-                    <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
                       id="email"
                       type="email"
@@ -242,7 +242,7 @@ const Auth = () => {
                 <div className="space-y-2">
                   <Label htmlFor="phone">Phone Number</Label>
                   <div className="relative">
-                    <Phone className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
                       id="phone"
                       type="tel"
@@ -259,7 +259,7 @@ const Auth = () => {
                 <div className="space-y-2">
                   <Label htmlFor="pincode">Pincode</Label>
                   <div className="relative">
-                    <MapPin className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
                       id="pincode"
                       placeholder="Enter your pincode"
@@ -275,7 +275,7 @@ const Auth = () => {
                 <div className="space-y-2">
                   <Label htmlFor="waterQualityIndex">Water Quality Index (TDS)</Label>
                   <div className="relative">
-                    <Droplet className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <Droplet className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Select 
                       value={registerForm.waterQualityIndex}
                       onValueChange={(value) => setRegisterForm({ ...registerForm, waterQualityIndex: value })}
@@ -296,7 +296,7 @@ const Auth = () => {
                 <div className="space-y-2">
                   <Label htmlFor="register-password">Password</Label>
                   <div className="relative">
-                    <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
                       id="register-password"
                       type="password"
@@ -313,7 +313,7 @@ const Auth = () => {
                 <div className="space-y-2">
                   <Label htmlFor="confirm-password">Confirm Password</Label>
                   <div className="relative">
-                    <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
                       id="confirm-password"
                       type="password"
@@ -330,7 +330,7 @@ const Auth = () => {
                 <div className="space-y-2">
                   <Label htmlFor="referralCode">Referral Code (Optional)</Label>
                   <div className="relative">
-                    <Gift className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                    <Gift className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <Input
                       id="referralCode"
                       placeholder="Enter referral code (if any)"
