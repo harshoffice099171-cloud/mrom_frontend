@@ -112,12 +112,12 @@ const Contact = () => {
             </Card>
           </div>
 
-          {/* Contact Form */}
-          <Card className="bg-background shadow-glow border-primary/20" id="contact-form">
+           {/* Contact Form */}
+           <Card className="bg-background shadow-glow border-primary/20">
             <CardHeader>
-              <CardTitle>Schedule Your Installation</CardTitle>
+              <CardTitle>Send us a Message</CardTitle>
               <p className="text-muted-foreground">
-                Fill out the form below and our team will contact you to schedule your installation
+                Fill out the form below and we'll get back to you as soon as possible
               </p>
             </CardHeader>
             <CardContent>
@@ -127,13 +127,13 @@ const Contact = () => {
                     <label className="block text-sm font-medium text-foreground mb-2">
                       First Name
                     </label>
-                    <Input placeholder="Enter your first name" required />
+                    <Input placeholder="Enter your first name" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
                       Last Name
                     </label>
-                    <Input placeholder="Enter your last name" required />
+                    <Input placeholder="Enter your last name" />
                   </div>
                 </div>
 
@@ -141,50 +141,35 @@ const Contact = () => {
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Email Address
                   </label>
-                  <Input type="email" placeholder="Enter your email address" required />
+                  <Input type="email" placeholder="Enter your email address" />
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Phone Number
                   </label>
-                  <Input type="tel" placeholder="Enter your phone number" required />
+                  <Input type="tel" placeholder="Enter your phone number" />
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
-                    Installation Address
+                    Subject
+                  </label>
+                  <Input placeholder="What is this regarding?" />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">
+                    Message
                   </label>
                   <Textarea 
-                    placeholder="Enter your complete installation address" 
-                    rows={3}
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Preferred Installation Date
-                  </label>
-                  <Input 
-                    type="date" 
-                    min={new Date().toISOString().split('T')[0]}
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Additional Notes
-                  </label>
-                  <Textarea 
-                    placeholder="Any specific requirements or questions about the installation..." 
+                    placeholder="Tell us more about your inquiry..." 
                     rows={4}
                   />
                 </div>
 
                 <Button variant="cta" size="lg" className="w-full">
-                  Request Installation
+                  Send Message
                 </Button>
               </form>
             </CardContent>

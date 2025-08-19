@@ -39,12 +39,12 @@ const About = () => {
           {/* Company Story */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-foreground">Our Story</h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-justify">
               M-Rom was founded with a clear and impactful goal to significantly improve water conservation 
               through intelligent and effective drinking water solutions. We continuously seek innovative 
               approaches and have introduced the country's first "Centralized Water Purification and Distribution System".
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-justify">
               This system provides households with a reliable, hassle-free, and cost-effective way to access 
               clean drinking water while prioritizing environmental sustainability through minimal waste and 
               encouraging water reuse.
@@ -82,7 +82,7 @@ const About = () => {
                       </div>
                       <div className="flex-1">
                         <h4 className="font-semibold text-foreground mb-2">{value.title}</h4>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
+                        <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                           {value.description}
                         </p>
                       </div>

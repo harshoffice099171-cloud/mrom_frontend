@@ -25,7 +25,7 @@ const Hero = () => {
                 <br />
                 <span className="text-foreground">Rakhen Khayal</span>
               </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
+              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed text-justify">
                 Experience India's first Centralized Water Purification & Distribution System. 
                 IoT-enabled, environment-friendly, and hassle-free clean water delivery directly to your kitchen.
               </p>

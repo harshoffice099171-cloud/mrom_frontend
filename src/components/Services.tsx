@@ -72,7 +72,7 @@ const Services = () => {
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-6">
             Our <span className="bg-gradient-ocean bg-clip-text text-transparent">Services</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-justify">
             Introducing Centralized Purified Water Direct to Kitchen (CPW-D2K)
           </p>
         </div>
@@ -87,7 +87,7 @@ const Services = () => {
               <h3 className="text-2xl font-bold text-foreground">CPW-D2K System</h3>
             </div>
             
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed text-justify">
               It delivers purified drinking water directly to your kitchen through a smart, 
               IoT-enabled system, ensuring safe, healthy, and hassle-free solution for your 
               entire household. In addition to providing clean and healthy water, it also helps 
